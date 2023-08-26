@@ -104,6 +104,8 @@ def main(args):
         point_label = args.point_label
     else:
         ann = prompt_process.everything_prompt()
+    print("information")
+    print(bboxes)
     prompt_process.plot(
         annotations=ann,
         output_path=args.output+args.img_path.split("/")[-1],
@@ -113,7 +115,6 @@ def main(args):
         withContours=args.withContours,
         better_quality=args.better_quality,
     )
-    print(ann)
 
 
 
