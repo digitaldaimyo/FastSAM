@@ -87,6 +87,9 @@ def main(args):
         conf=args.conf,
         iou=args.iou    
         )
+    print(everything_results)
+    for detected_object in everything_results:
+        print(detected_object)
     bboxes = None
     points = None
     point_label = None
