@@ -106,6 +106,7 @@ def main(args):
         ann = prompt_process.everything_prompt()
     print("information")
     print(bboxes)
+    print(ann)
     prompt_process.plot(
         annotations=ann,
         output_path=args.output+args.img_path.split("/")[-1],
